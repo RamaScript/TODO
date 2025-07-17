@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#app {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+#todo-box h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid #66a6ff;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#add-btn {
+  padding: 8px 16px;
+  background: #66a6ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#add-btn:hover {
+  background: #4d8edb;
+}
+
+#task-list {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, wheat, white);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.task-item:hover {
+  background: linear-gradient(to right, wheat, rgb(233, 231, 226));
+  transition: 0.3s;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+  
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-left: 8px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.task-actions button:hover {
+  color: #000;
+}
+
+.edit-input {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  flex: 1;
+  width: 100%;
+  resize: vertical;
+
+  overflow-wrap: break-word;
+  border: 2px solid #66a6ff;
+}
